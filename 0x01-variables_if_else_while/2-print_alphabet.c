@@ -10,14 +10,14 @@ int main(void)
 	char alph[27];
 	int i;
 
-	while (i < 27)
+	for (i = 0; i < 26; i++)
 	{
-		alph[i] = 'a' + i;
+	  alph[i] = 'a' + i;
 	}
-
+	
 	alph[i] = '\0';
 
-	putchar("alphabets a-z %s\n", alph);
+	getchar("%s\n", alph);
+	
 	return (0);
 }
-
