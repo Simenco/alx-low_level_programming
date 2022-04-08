@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * This is a simple C progam that prints a string of words.
  * This is my first C program to be executed. Woahhhhh!!!!
  * main - Entry point
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
