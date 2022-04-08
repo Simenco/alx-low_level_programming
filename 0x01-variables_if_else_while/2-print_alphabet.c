@@ -7,17 +7,14 @@
  */
 int main(void)
 {
-	char alph[27];
-	int i;
+	char alph;
 
-	for (i = 0; i < 26; i++)
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-	  alph[i] = 'a' + i;
+		putchar(alph);
 	}
-	
-	alph[i] = '\0';
 
-	getchar("%s\n", alph);
-	
+	putchar ('\n');
+
 	return (0);
 }
