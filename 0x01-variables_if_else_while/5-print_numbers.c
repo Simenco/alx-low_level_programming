@@ -12,10 +12,10 @@ int main(void)
 
 	for (a = 0; a < 10; a++)
 	{
-		putchar(a);
+		printf ("%d",a);
 	}
 
-	putchar ('\n');
+	printf ("\n");
 
 	return (0);
 }
