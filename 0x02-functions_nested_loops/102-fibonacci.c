@@ -20,11 +20,22 @@ int main(void)
 
 	for (count = 3; count < 50; count++)
 	{
-		a = b;
-		b = c;
-		c = a + b;
+		if (count != 49)
+		{
+			a = b;
+			b = c;
+			c = a + b;
 
-		printf("%d, ", c);
+			printf("%d, ", c);
+		}
+		else
+		{
+			a = b;
+			b = c;
+			c = a + b;
+
+			printf("%d", c);
+		}
 	}
 	printf("\n");
 	return (0);
