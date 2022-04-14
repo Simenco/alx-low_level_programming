@@ -3,8 +3,8 @@
 
 /**
  * print_to_98 - prints number from n to 98 in order
- * @n - integer value to accept
- * Return - void
+ * @n: integer value to accept
+ * Return: void
  */
 void print_to_98(int n)
 {
