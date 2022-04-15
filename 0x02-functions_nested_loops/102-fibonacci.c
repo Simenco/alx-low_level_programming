@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
 	unsigned long int c;
 	int count;
 
 	c = a + b;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%lu, ", a);
+	printf("%lu, ", b);
 	printf("%lu, ", c);
 
 	for (count = 0; count < 47; count++)
