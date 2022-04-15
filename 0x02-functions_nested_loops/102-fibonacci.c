@@ -18,7 +18,7 @@ int main(void)
 	printf("%d, ", b);
 	printf("%lu, ", c);
 
-	for (count = 0; count < 46; count++)
+	for (count = 0; count < 47; count++)
 	{
 		a = b;
 		b = c;
