@@ -9,32 +9,28 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	int c;
+	unsigned long int c;
 	int count;
 
 	c = a + b;
 
 	printf("%d, ", a);
 	printf("%d, ", b);
-	printf("%d, ", c);
+	printf("%lu, ", c);
 
-	for (count = 3; count < 50; count++)
+	for (count = 0; count < 46; count++)
 	{
-		if (count != 49)
-		{
-			a = b;
-			b = c;
-			c = a + b;
+		a = b;
+		b = c;
+		c = a + b;
 
-			printf("%d, ", c);
+		if (count != 46)
+		{
+			printf("%lu, ", c);
 		}
 		else
 		{
-			a = b;
-			b = c;
-			c = a + b;
-
-			printf("%d", c);
+			printf("%lu", c);
 		}
 	}
 	printf("\n");
