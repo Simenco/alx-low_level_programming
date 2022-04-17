@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints first 50 fibonacci numbers inl 1 and 2
  *
@@ -11,28 +10,20 @@ int main(void)
 	unsigned long int b = 2;
 	unsigned long int c;
 	int count;
+	unsigned long int sum = 2;
 
-	c = a + b;
-
-	printf("%lu, ", a);
-	printf("%lu, ", b);
-	printf("%lu, ", c);
-
-	for (count = 0; count < 47; count++)
+	for (count = 0; count < 48; count++)
 	{
+		c = a + b;
 		a = b;
 		b = c;
-		c = a + b;
 
-		if (count != 46)
+		if ((c < 4000000) && ((c % 2) == 0))
 		{
-			printf("%lu, ", c);
-		}
-		else
-		{
-			printf("%lu", c);
+			sum += c;
 		}
 	}
+	printf("sum of all even-valued terms less than 4,000,000: %lu", sum);
 	printf("\n");
 	return (0);
 }
