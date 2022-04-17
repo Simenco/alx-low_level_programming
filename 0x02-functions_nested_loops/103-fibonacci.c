@@ -23,7 +23,7 @@ int main(void)
 			sum += c;
 		}
 	}
-	printf("sum of all even-valued terms less than 4,000,000: %lu", sum);
+	printf("%lu", sum);
 	printf("\n");
 	return (0);
 }
