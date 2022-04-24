@@ -2,7 +2,7 @@
 
 /**
  * cap_string - capitalizes all words of a string.
- * @s: string to use.
+ * @str: string to use.
  * Return: string.
  */
 char *cap_string(char *str)
@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		{
 			j = 0;
 			k = 0;
-			
+
 			while (k == 0 && j < 13)
 			{
 				if (str[i - 1] == a[j])
@@ -29,8 +29,8 @@ char *cap_string(char *str)
 				}
 				j++;
 			}
-			if (k == 1)									{
-				str[i] -= 32;								}
+			if (k == 1)
+				str[i] -= 32;
 		}
 		i++;
 	}
