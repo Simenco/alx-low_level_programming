@@ -10,7 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int n;
-	
+
 	for (n = 0; s[n] != '\0'; n++)
 	{
 		if (c == s[n])
@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	return(c == s[n] ? (s + n) : '\0');
+	return ((c == s[n]) ? (s + n) : '\0');
 }
