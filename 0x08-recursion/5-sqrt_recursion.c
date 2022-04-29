@@ -1,19 +1,26 @@
 #include "main.h"
 /**
  * sqrt2 - makes possible to evaluate from 1 to n
- * @a: same number as n
- * @b: number that iterates from 1 to n
+ * @n: number to calculate sqaure root
+ * @i: iterator
  * Return: On success 1
  * On error, -1 is returned, and errno is set appropriately
  */
 
-int sqrt2(int a, int b)
+int sqrt2(int n, int i)
 {
-	if (b * b == a)
-		return (b);
-	else if (b * b > a)
-		return (-1);
-	return (sqrt2(a, b * 1));
+	if (i % (n / i) == 0)
+	{
+		if (i * (n / i) == n)
+		{
+			return (i);
+		}
+		else
+		{
+			return (-1);
+		}
+	}
+	return (0 + sqrt2(n, i + 1));
 }
 
 /**
@@ -24,5 +31,11 @@ int sqrt2(int a, int b)
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(n, 1));
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (0);
+	if (n == 1)
+		return (1);
+	return (sqrt2(n, 2));
 }
