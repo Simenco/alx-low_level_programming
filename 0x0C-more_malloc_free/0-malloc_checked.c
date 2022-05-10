@@ -11,13 +11,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *p, n;
+	char *p;
 
-	p = (int *) malloc(sizeof(int) * n);
+	p = malloc(b);
 	if (p == NULL)
 	{
-		return (98);
-		exit(EXIT_FAILURE);
+		exit(98);
+		return (NULL);
 	}
 	return (p);
 }
