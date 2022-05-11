@@ -7,6 +7,6 @@
  * this macro ABS(X) computes the absolute value of X
  */
 
-#define ABS(X) (X < 0 ? (-1 * X) : (X))
+#define ABS(X) ((X) < 0 ? (-1 * X) : (X))
 
 #endif
