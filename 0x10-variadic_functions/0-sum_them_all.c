@@ -5,10 +5,10 @@
  * sum_them_all - variadic function
  * @n: argument
  * desc: this function sums all parameters
- * Return: the sum if n is not 0 
+ * Return: the sum if n is not 0
  */
 
- int sum_them_all(const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i, sum_all = 0;
