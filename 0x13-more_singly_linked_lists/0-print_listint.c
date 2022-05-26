@@ -12,7 +12,7 @@
 size_t print_listint(const listint_t *h)
 {
 	/*const listint_t *movptr = NULL;*/
-	int num_of_nodes = 0;
+	size_t num_of_nodes = 0;
 
 	/*if (h == NULL)
 		return (num_of_nodes);
