@@ -11,17 +11,17 @@
 
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *movptr = NULL;
+	/*const listint_t *movptr = NULL;*/
 	int num_of_nodes = 0;
 
-	if (h == NULL)
+	/*if (h == NULL)
 		return (num_of_nodes);
-	movptr = h;
-	while (movptr != NULL)
+	movptr = h;*/
+	while (h != NULL)
 	{
 		num_of_nodes++;
-		printf("%d\n", movptr->n);
-		movptr = movptr->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 	return (num_of_nodes);
 
