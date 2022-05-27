@@ -20,7 +20,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	movptr->n = n;
 	movptr->next = *head;
 	*head = movptr;
-	
 	return (movptr);
 
 }
