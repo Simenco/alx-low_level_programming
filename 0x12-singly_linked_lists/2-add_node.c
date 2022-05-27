@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * add_node - function add nodes
  * @head: head of list_t
@@ -8,28 +9,26 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	char *copy;
-	int len;
-	list_t *new_member;
+	int len = 0;
+	list_t *ptr;
 
-	new_member = malloc(sizeof(list_t));
-	if (new_member == NULL)
+	ptr = malloc(sizeof(list_t));
+	if (ptr == NULL)
 		return (NULL);
 
 	copy = strdup(str);
 	if (copy == NULL)
 	{
-		free(new_member);
+		free(ptr);
 		return (NULL);
 	}
 
-	for (len = 0; str[len];)
+	while (str[len])
 		len++;
 
-	new_member->str = copy;
-	new_member->len = len;
-	new_member->next = *head;
-
-	*head = new_member;
-
-	return (new_member);
+	ptr->str = copy;
+	ptr->len = len;
+	ptr->next = *head;
+	*head = ptr;
+	return (ptr);
 }
