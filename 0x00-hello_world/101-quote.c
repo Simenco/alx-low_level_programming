@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
  * main - Entry point
@@ -11,6 +10,6 @@ int main(void)
 {
 	char *quote = "and that piece of art is useful\" - Dora Korpar, 2005-10-19\n";
 
-	fwrite(quote, 59, 1, stderr);
+	write(2, quote, 59);
 	return (1);
 }
