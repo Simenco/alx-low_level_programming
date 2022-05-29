@@ -10,6 +10,6 @@ int main(void)
 {
 	char *quote = "and that piece of art is useful\" - Dora Korpar, 2005-10-19\n";
 
-	write(2, quote, 59);
+	fwrite(quote, 59, 1, stderr);
 	return (1);
 }
