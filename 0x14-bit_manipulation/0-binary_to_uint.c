@@ -22,6 +22,21 @@ int pos_pow(int x, int i)
 }
 
 /**
+ * _strlen - function to get string length
+ * @str: pointer to string
+ * Return: number of char in string
+ */
+int _strlen(const char *str)
+{
+	int i, count;
+
+	for (i = 0; b[i] != '\0'; i++)
+		count++;
+	return (count);
+
+}
+
+/**
  * binary_to_uint - this function converts binary to an unsigned int
  *
  * @b: pointer to a string of 0 and 1 chars
@@ -36,7 +51,7 @@ unsigned int binary_to_uint(const char *b)
 	int i, a, n;
 	unsigned int agg, total = 0;
 
-	n = strlen(b);
+	n = _strlen(b);
 	if (b == NULL)
 		return (0);
 
