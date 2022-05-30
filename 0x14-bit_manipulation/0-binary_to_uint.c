@@ -28,9 +28,9 @@ int pos_pow(int x, int i)
  */
 int _strlen(const char *str)
 {
-	int i, count;
+	int i, count = 0;
 
-	for (i = 0; b[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 		count++;
 	return (count);
 
