@@ -8,9 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int m_loc;
-	int binary[INT_SIZE];
-	int j;
+	unsigned long int j, binary[INT_SIZE];
 	int i = INT_SIZE - 1;
 
 	while (i >= 0)
