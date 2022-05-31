@@ -52,18 +52,20 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int agg, total = 0;
 
 	n = _strlen(b);
-	if (b == NULL)
-		return (0);
-
-	for (i = 0; b[i] != '\0'; i++)
+	if (b != NULL)
 	{
-		a = b[i] - '0';
+		for (i = 0; b[i] != '\0'; i++)
+		{
+			a = b[i] - '0';
 
-		if ((a > 1) || (a < 0))
-			return (0);
-		agg = a * pos_pow(2, n - 1);
-		total += agg;
-		n--;
+			if ((a > 1) || (a < 0))
+				return (0);
+			agg = a * pos_pow(2, n - 1);
+			total += agg;
+			n--;
+		}
+		return (total);
 	}
-	return (total);
+	else
+		return (0);
 }
