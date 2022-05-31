@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - prints the bit value at any index specified
+ * set_bit - set the bit value at any index to 1
  * @n: the number
  * @index: index where value will be printed
  * Return: value at index or -1 if error occurred
