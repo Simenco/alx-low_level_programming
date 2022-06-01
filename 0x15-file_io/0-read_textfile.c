@@ -22,15 +22,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	n_r = read(fd, buf, letters);
-	n_w = write(fd, buf, n_r);
+	n_w = write(STDOUT_FILENO, buf, n_r);
 	
 	if (fd == -1 || n_r == -1 || n_w == -1 || n_w != n_r)
 	{
 		free(buf);
 		return (0);
 	}
-	free(buffer);
+	free(buf);
 	close(fd);
 
-	return (num_written);
+	return (n_w);
 }
