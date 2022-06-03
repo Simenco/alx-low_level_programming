@@ -1,0 +1,3 @@
+[submodule "simple_shell"]
+	path = simple_shell
+	url = https://github.com/Simenco/simple_shell
