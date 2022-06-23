@@ -61,7 +61,7 @@ void print_float(va_list ap)
 void print_string(va_list ap)
 {
 	char *str;
-	
+
 	str = va_arg(ap, char*);
 
 	if (str == NULL)
@@ -74,7 +74,7 @@ void print_string(va_list ap)
 }
 
 /**
- * void print_all - this function prints anything 
+ * print_all - this function prints anything
  *
  * @format: indicates the format of what to be printed
  * c - char, i - integer, f - float, s - string
@@ -103,12 +103,12 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while ( j < 4 && (*(format + i) != *(some_function[j].input)))
+		while (j < 4 && (*(format + i) != *(some_function[j].input)))
 			j++;
 
 		if (j < 4)
 		{
-			printf("%s", delimiter) ;
+			printf("%s", delimiter);
 			some_function[j].print_type(ap);
 			delimiter = ", ";
 		}
