@@ -24,7 +24,7 @@ This REPOSITORY contains projects and assignments done in ALX Software Engineein
 * [Project 0x13. C - More singly linked lists](./0x13-more_singly_linked_lists)
 * [Project 0x14. C - Bit manipulation](./0x14-bit_manipulation)
 * [Project 0x15. C - File I/O](./0x15-file_io)
-* [Project 0x16. C - Simple Shell](./simple_shell @ 3b89567)
+* [Project 0x16. C - Simple Shell](https://github.com/Simenco/simple_shell)
 
 ## Author :black_nib:
 
