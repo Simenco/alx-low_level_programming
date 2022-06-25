@@ -14,7 +14,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i, n, a, j = 0;
-	unsigned int, digit, decimal = 0;
+	unsigned int digit, decimal = 0;
 
 
 	n = atoi(b);
