@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) print_str(void);
+void print_str(void) __attribute__((constructor));
 
 /**
  * print_str - this function prints some strings
