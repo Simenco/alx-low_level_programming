@@ -4,7 +4,6 @@
  * sum_listint - this function returns the sum of all
  * data in a linked list
  * @head: head of the linked list
- * 
  * Return: the sum or 0 if linked list is empty
  */
 
