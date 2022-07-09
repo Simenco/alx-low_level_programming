@@ -4,6 +4,7 @@
  * insert_nodeint_at_index - this function inserts node at a given index
  * @head: head of the linked list
  * @idx: location of the node in the list
+ * @n: data to insert
  * Return: the address of the new node or NULL if it failed
  * if not possible to add the new node, return NULL
  */
