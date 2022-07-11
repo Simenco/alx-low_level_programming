@@ -9,22 +9,32 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *ptr = *head;
+	listint_t *del, *ptr = *head;
+	unsigned int i;
 
+	if (*head == NULL)
+		return (-1);
+	
 	if (index == 0)
 	{
-		*head = ptr->next->next;
+		*head = (*head)->next;
+		ptr->next = NULL;
+		free(ptr);
+		return(1);
+	}
+
+	else
+	{
+		for (i = 0; i < index - 1; i++)
+		{
+			ptr = ptr->next;
+		}
+		
+		/* del pointer ponits to the node to be deleted */
+		del = ptr->next;
+		ptr->next = ptr->next->next;
+		del->next = NULL;
+		free(del);
 		return (1);
 	}
-
-	for (; index > 0; index--)
-	{
-		if (ptr == NULL || ptr->next == NULL)
-			return (-1);
-
-		ptr = ptr->next;
-	}
-	ptr = ptr->next->next;
-
-	return (1);
 }
